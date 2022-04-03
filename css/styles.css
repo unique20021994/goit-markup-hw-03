@@ -56,6 +56,7 @@ body {
   width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+ 
 }
 .main-header {
   height: 80px;
@@ -307,11 +308,22 @@ body {
 }
 
 /* Styles for portfolio.html */
+.portfolio-wrapper {
+  margin-top: 94px;
+  margin-bottom:94px;
+}
 .button-list {
+  display:flex;
   list-style: none;
+  margin:0 auto;
+  padding: 0;
+  justify-content: space-between;
+  width: 611px;
+  
 }
 
 .buttons {
+  display: flex;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -323,6 +335,12 @@ body {
   background-color: var(--background-color-section);
   border: none;
   cursor: pointer;
+  padding: 22px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  
 }
 .buttons:hover,
 .buttons:focus {
@@ -330,7 +348,24 @@ body {
   background-color: var(--color-logo-first-letter);
 }
 .work-list {
+  display: flex;
   list-style: none;
+  flex-wrap: wrap;
+  padding-left:0;
+  margin:0;
+  margin-top:34px;
+}
+.work-list-wrapper {
+ margin-bottom: 30px;
+ margin-right: 30px;
+ min-height: 404px;
+ width:370px;
+ background:var(--color-button);
+ border: 1px solid #EEEEEE;
+ box-sizing: border-box;
+}
+.work-list-wrapper:nth-child(3n){
+  margin-right: 0;
 }
 .work-name {
   font-weight: 700;
@@ -338,6 +373,10 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin:0;
+  margin-top: 24px;
+  margin-left:20px;
+  
 }
 .work-type {
   font-weight: 400;
@@ -345,4 +384,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--color-section-text);
+  margin:0;
+  margin-left:20px;
+  margin-bottom:24px;
+  
 }
