@@ -1,131 +1,201 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студия</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Студия</title>
-  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <div class="container">
+  <body>
     <header class="main-header">
-      <div class="wrapper">
-        <nav class="main-navigation">
-          <a class="logo-name" href="./index.html">
-            <span class="logo-first">Web</span>Studio
-          </a>
-          <div class="navigation-wrapper">
+      <div class="container">
+        <div class="wrapper">
+          <nav class="main-navigation">
+            <a class="logo-name" href="./index.html">
+              <span class="logo-first">Web</span>Studio
+            </a>
+            <div class="navigation-wrapper">
+              <ul class="navigation">
+                <li><a class="nav-site" href="./index.html">Студия</a></li>
+                <li>
+                  <a class="nav-site current" href="./portfolio.html">
+                    Портфолио
+                  </a>
+                </li>
+                <li><a class="nav-site" href="">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="navigation-wrapper-contact">
             <ul class="navigation">
-              <li><a class="nav-site" href="./index.html">Студия</a></li>
-              <li><a class="nav-site current" href="./portfolio.html">Портфолио</a></li>
-              <li><a class="nav-site" href="">Контакты</a></li>
+              <li>
+                <a class="nav-site nav-link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a class="nav-site nav-link" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
             </ul>
           </div>
-        </nav>
-        <div class="navigation-wrapper-contact">
-          <ul class="navigation">
-            <li>
-              <a class="nav-site nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Наши работы</h1>
+
+      <section class="portfolio-wrapper">
+        <div class="container">
+          <h2 class="visually-hidden">Фильтр работ</h2>
+          <ul class="button-list">
+            <li><button class="buttons" type="button">Все</button></li>
+            <li><button class="buttons" type="button">Веб-сайты</button></li>
+            <li><button class="buttons" type="button">Приложения</button></li>
+            <li><button class="buttons" type="button">Дизайн</button></li>
+            <li><button class="buttons" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="work-list">
+            <li class="work-list-wrapper">
+              <img
+                src="./images/portfolio/technokryak.jpg"
+                alt="technokryak"
+                width="370"
+                height="294"
+              />
+              <h3 class="work-name">Технокряк</h3>
+              <p class="work-type">Веб-сайт</p>
             </li>
-            <li>
-              <a class="nav-site nav-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="work-list-wrapper">
+              <img
+                src="./images/portfolio/poster.jpg"
+                alt="poster New Orlean vs Golden Star"
+                width="370"
+                height="294"
+              />
+              <h3 class="work-name">Постер New Orlean vs Golden Star</h3>
+              <p class="work-type">Дизайн</p>
+            </li>
+            <li class="work-list-wrapper">
+              <img
+                src="./images/portfolio/seafood.jpg"
+                alt="Ресторан Seafood"
+                width="370"
+                height="294"
+              />
+              <h3 class="work-name">Ресторан Seafood</h3>
+              <p class="work-type">Приложение</p>
+            </li>
+            <li class="work-list-wrapper">
+              <img
+                src="./images/portfolio/prime.jpg"
+                alt="Ресторан Seafood"
+                width="370"
+                height="294"
+              />
+              <h3 class="work-name">Проект Prime</h3>
+              <p class="work-type">Маркетинг</p>
+            </li>
+            <li class="work-list-wrapper">
+              <img
+                src="./images/portfolio/boxes.jpg"
+                alt="Проект Boxes"
+                width="370"
+                height="294"
+              />
+              <h3 class="work-name">Проект Boxes</h3>
+              <p class="work-type">Приложение</p>
+            </li>
+            <li class="work-list-wrapper">
+              <img
+                src="./images/portfolio/inspiration.jpg"
+                alt="Inspiration has no Borders"
+                width="370"
+                height="294"
+              />
+              <h3 class="work-name">Inspiration has no Borders</h3>
+              <p class="work-type">Веб-сайт</p>
+            </li>
+            <li class="work-list-wrapper">
+              <img
+                src="./images/portfolio/limited.jpg"
+                alt="Издание Limited Edition"
+                width="370"
+                height="294"
+              />
+              <h3 class="work-name">Издание Limited Edition</h3>
+              <p class="work-type">Дизайн</p>
+            </li>
+            <li class="work-list-wrapper">
+              <img
+                src="./images/portfolio/lab.jpg"
+                alt="Проект LAB"
+                width="370"
+                height="294"
+              />
+              <h3 class="work-name">Проект LAB</h3>
+              <p class="work-type">Маркетинг</p>
+            </li>
+            <li class="work-list-wrapper">
+              <img
+                src="./images/portfolio/growing.jpg"
+                alt="Growing Business"
+                width="370"
+                height="294"
+              />
+              <h3 class="work-name">Growing Business</h3>
+              <p class="work-type">Приложение</p>
             </li>
           </ul>
         </div>
-        </div>
-    </header>
-  </div>
-  <main>
-    <h1 class="visually-hidden">Наши работы</h1>
-    <div class="container">
-      <section class="portfolio-wrapper">
-        <h2 class="visually-hidden">Фильтр работ</h2>
-        <ul class="button-list">
-          <li><button class="buttons" type="button">Все</button></li>
-          <li><button class="buttons" type="button">Веб-сайты</button></li>
-          <li><button class="buttons" type="button">Приложения</button></li>
-          <li><button class="buttons" type="button">Дизайн</button></li>
-          <li><button class="buttons" type="button">Маркетинг</button></li>
-        </ul>
-        <ul class="work-list">
-          <li class="work-list-wrapper">
-            <img src="./images/technokryak.jpg" alt="technokryak" width="370" height="294" />
-            <h3 class="work-name">Технокряк</h3>
-            <p class="work-type">Веб-сайт</p>
-          </li>
-          <li class="work-list-wrapper">
-            <img src="./images/poster.jpg" alt="poster New Orlean vs Golden Star" width="370" height="294" />
-            <h3 class="work-name">Постер New Orlean vs Golden Star</h3>
-            <p class="work-type">Дизайн</p>
-          </li>
-          <li class="work-list-wrapper">
-            <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294" />
-            <h3 class="work-name">Ресторан Seafood</h3>
-            <p class="work-type">Приложение</p>
-          </li>
-          <li class="work-list-wrapper">
-            <img src="./images/prime.jpg" alt="Ресторан Seafood" width="370" height="294" />
-            <h3 class="work-name">Проект Prime</h3>
-            <p class="work-type">Маркетинг</p>
-          </li>
-          <li class="work-list-wrapper">
-            <img src="./images/boxes.jpg" alt="Проект Boxes" width="370" height="294" />
-            <h3 class="work-name">Проект Boxes</h3>
-            <p class="work-type">Приложение</p>
-          </li>
-          <li class="work-list-wrapper">
-            <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" width="370" height="294" />
-            <h3 class="work-name">Inspiration has no Borders</h3>
-            <p class="work-type">Веб-сайт</p>
-          </li>
-          <li class="work-list-wrapper">
-            <img src="./images/limited.jpg" alt="Издание Limited Edition" width="370" height="294" />
-            <h3 class="work-name">Издание Limited Edition</h3>
-            <p class="work-type">Дизайн</p>
-          </li>
-          <li class="work-list-wrapper">
-            <img src="./images/lab.jpg" alt="Проект LAB" width="370" height="294" />
-            <h3 class="work-name">Проект LAB</h3>
-            <p class="work-type">Маркетинг</p>
-          </li>
-          <li class="work-list-wrapper">
-            <img src="./images/growing.jpg" alt="Growing Business" width="370" height="294" />
-            <h3 class="work-name">Growing Business</h3>
-            <p class="work-type">Приложение</p>
-          </li>
-        </ul>
       </section>
-    </div>
-  </main>
-  <footer class="main-footer">
-    <div class="container">
-
-      <div class="logo-wrap">
-        <a class="logo-name-footer" href="#"><span class="logo-first">Web</span>Studio</a>
-
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="logo-wrap">
+          <a class="logo-name-footer" href="#">
+            <span class="logo-first">Web</span>Studio
+          </a>
+        </div>
+        <address>
+          <ul class="contact-info">
+            <li>
+              <a
+                class="address-info"
+                href="https://goo.gl/maps/8xAyCc6BftRqbFo67"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li>
+              <a class="mail-phone-info" href="mailto:info@example.com">
+                info@example.com
+              </a>
+            </li>
+            <li>
+              <a class="mail-phone-info" href="tel:+380991111111">
+                +38 099 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
-      <address>
-        <ul class="contact-info">
-          <li>
-            <a class="address-info" href="https://goo.gl/maps/8xAyCc6BftRqbFo67" target="_blank"
-              rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          <li>
-            <a class="mail-phone-info" href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li>
-            <a class="mail-phone-info" href="tel:+380991111111">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

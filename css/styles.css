@@ -15,8 +15,35 @@
   --background-color-hover: #188ce8;
 }
 
-/* Styles for index.html */
+/* Обнуление свойств */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
 
+/* Styles for index.html */
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  background-color: var(--color-button);
+  margin: 0;
+}
 /* Logo */
 .logo-name {
   font-family: Raleway, Arial, sans-serif;
@@ -43,17 +70,8 @@
   text-decoration: none;
 }
 
-body {
-  font-family: Roboto, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  background-color: var(--color-button);
-  margin: 0;
-}
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -61,11 +79,13 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
 }
 
 /* Site nav */
 .main-navigation {
   display: flex;
+  align-items: center;
 }
 .navigation-wrapper {
   width: 294px;
@@ -81,7 +101,7 @@ body {
 .wrapper {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   width: 100%;
 }
 
@@ -109,9 +129,7 @@ body {
 .nav-site.current {
   color: var(--color-logo-first-letter);
 }
-.nav-site {
-  color: var(--primary-text-color);
-}
+
 .nav-link {
   color: var(--color-section-text);
 }
@@ -156,7 +174,7 @@ body {
 .bcg {
   display: flex;
   background-color: var(--bcg-color-section);
-  margin: 0 0 94px 0;
+  margin: 0;
   height: 600px;
   align-items: center;
   flex-direction: column;
@@ -185,6 +203,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 94px;
 }
 .features h3 {
   font-weight: 700;
@@ -194,14 +213,12 @@ body {
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 10px;
-  margin-top: 0;
   padding: 0;
 }
 .features p {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--color-section-text);
-  margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 }
@@ -224,12 +241,15 @@ body {
 .section-list {
   list-style: none;
   display: flex;
-
   padding: 0;
-  margin: 0;
+    margin: 0;
 }
 .section-list-wrap {
   margin-right: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .type-of-work-wrap {
   margin-top: 50px;
@@ -260,6 +280,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  padding-top: 30px;
+  margin-bottom: 0;
 }
 .position {
   font-size: 16px;
@@ -267,6 +289,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-section-text);
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
 }
 
 /* Footer */
@@ -351,7 +376,7 @@ body {
   flex-wrap: wrap;
   padding-left: 0;
   margin: 0;
-  margin-top: 34px;
+  padding-top: 34px;
 }
 .work-list-wrapper {
   margin-bottom: 30px;
